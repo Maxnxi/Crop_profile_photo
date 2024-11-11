@@ -274,6 +274,7 @@ private extension CropViewController {
 			image,
 			for: .normal
 		)
+		button.tintColor = .lightGray
 		
 		return button
 	}
@@ -313,15 +314,15 @@ private extension CropViewController {
 		)
 		
 		cancelButton.easy.layout(
-			Top(16),
-			Leading(16),
-			Bottom(12)
+			Size(36),
+			CenterY(),
+			Leading(16)
 		)
 		
 		doneButton.easy.layout(
-			Top(16),
-			Trailing(16),
-			Bottom(12)
+			Size(36),
+			CenterY(),
+			Trailing(16)
 		)
 	}
 	
@@ -349,6 +350,7 @@ private extension CropViewController {
 				}
 				let croppedImage = cropImage(sizeToCrop: cropOutputImageSize)
 				
+				// you can use completion or combine
 				if Constants.isUseCompletions {
 					onDoneButtonCompletion?(croppedImage)
 				} else {
