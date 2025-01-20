@@ -5,6 +5,7 @@ This is the example of croping and scaling image in Profile page in app
 CropViewController implemented in UIKit and connected to SwiftUI View
 
 
+
 ## Examples
 
 ![photo_2024-11-11 11 39 59](https://github.com/user-attachments/assets/b97250c9-831d-4ffc-ba3e-052c076ab618)
