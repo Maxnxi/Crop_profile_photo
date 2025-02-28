@@ -7,9 +7,11 @@ CropViewController implemented in UIKit and connected to SwiftUI View
 
 
 
+
 ## Examples
 
 ![photo_2024-11-11 11 39 59](https://github.com/user-attachments/assets/b97250c9-831d-4ffc-ba3e-052c076ab618)
+
 
 
 ## Usage
@@ -20,6 +22,7 @@ let cropVC = CropViewController(
     cropOutputImageSize: CGSize(width: 1080, height: 1080)
 )
 ```
+
 
 And get the result with completion handler 
 
@@ -45,4 +48,5 @@ cropVC.onDoneButtonSubject
     .store(in: &cancellables)
 ```
 
-update
+
+
